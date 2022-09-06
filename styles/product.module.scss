@@ -1,0 +1,28 @@
+.products{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  justify-content: center;
+  margin: 20px 0;
+  .card{
+    margin: 10px auto;
+    .card_img_top{
+      height: 250px;
+      width: 100%;
+    }
+    .card_body{
+      .card_title{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-transform: capitalize;
+        margin-top: 10px;
+      }
+      .card_text{
+        height: 70px;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+      }
+    }
+  }
+}

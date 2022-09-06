@@ -11,7 +11,7 @@ const Notify = () => {
   const { notify } = state
 
   return (
-    <div>
+    <div style={{ backgroundColor: "lightblue" }}>
       {notify.loading && <Loading />}
       {notify.error && <Toast
         msg={{ title: "Error", msg: notify.error }}
